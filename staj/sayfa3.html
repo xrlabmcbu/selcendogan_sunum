@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoğraflar ve Açıklamalar</title>
+    <style>
+        /* Sayfa stili */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Fotoğraf ve açıklama bloğu stili */
+        .photo-container {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Fotoğraf stili */
+        .photo-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Açıklama stili */
+        .photo-container p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>TCBM-İSTİHDAM ORANI</h1>
+
+    <!-- İlk Fotoğraf -->
+    <div class="photo-container">
+        <img src="C:\Users\Lenovo\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Ekran görüntüsü 2024-08-14 151512.png" alt="Birinci fotoğraf">
+        <p>İlk blokta analizde kullanılacak kütüphaneleri yükledim. İkinci blokta üzerinde çalışacağım veri setini python dosyamın içine alıyorum.</p>
+        <p>Üçüncü blokta verimin boyutunu inceliyorum. Ve dördüncü kod bloğumda da veri setimin içeriğini görüyorum.</p>
+    </div>
+
+    <!-- İkinci Fotoğraf -->
+    <div class="photo-container">
+        <img src="C:\Users\Lenovo\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Ekran görüntüsü 2024-08-14 151718.png" alt="İkinci fotoğraf">
+        <p>data_frame.isnull().sum() kullanarak veri setimdeki boş verilerin toplam sayılarını görüyorum.type(data_frame) ile de veri setimin bir Pandas DataFrame olduğunu belirtirken, data_frame.dtypes ile verilerim türü hakkında bilgi sahibi oluyorum</p>
+    </div>
+
+    <!-- Üçüncü Fotoğraf -->
+    <div class="photo-container">
+        <img src="c:\Users\Lenovo\Desktop\staj\15.png" alt="Üçüncü fotoğraf">
+        <p>Farklı tarihlerde kaydedilen verileri karşılaştırmak, bir olayın veya sürecin zaman içindeki değişimini anlamamızı kolaylaştıracağından tarihi indexledim.</p>
+    </div>
+
+    <!-- Üçüncü Fotoğraf -->
+    <div class="photo-container">
+        <img src="c:\Users\Lenovo\Desktop\staj\2.png" alt="Üçüncü fotoğraf">
+        <p>fillna kullanarak veri setimde bulunan boş değerleri ya doldurmam ya da silmem gerekiyordu. Ben mean kullandım. Boş değerler ortalama değerler ile dolduruldu. Daha sonra tekrar boş verim var mı diye kontrol ettim.</p>
+    </div>
+   
+    <!-- Üçüncü Fotoğraf -->
+    <div class="photo-container">
+        <img src="c:\Users\Lenovo\Desktop\staj\3.png" alt="Üçüncü fotoğraf">
+        <p>İstihdam oranını gözlem değerleri kullanarak görselleştirdim.</p>
+    </div>
+     <!-- Üçüncü Fotoğraf -->
+     <div class="photo-container">
+        <img src="c:\Users\Lenovo\Desktop\staj\4.png" alt="Üçüncü fotoğraf">
+        <p>Veri setimin korelasyon matrisini aldım.Bu sayede gözlemlemek istediğim verimin, diğer verilerimle aralarındaki ilişkiyi görebiliyorum.</p>
+    </div>
+         <!-- Üçüncü Fotoğraf -->
+    <div class="photo-container">
+        <img src="c:\Users\Lenovo\Desktop\staj\5.png" alt="Üçüncü fotoğraf">
+        <p>Korelasyon matrisinden öğrendiğim sonuçla kendime bir selected_features oluşturuyorum.Burada istihdam oranını etkileyen sütunlarımı aldım ve yeni verimi bu sütunlarla oluşturdum</p>
+    </div><!-- Üçüncü Fotoğraf -->
+    <div class="photo-container">
+        <img src="c:\Users\Lenovo\Desktop\staj\6.png" alt="Üçüncü fotoğraf">
+        <p>X:(data_frame) istihdam oranını tahmin etmek için kullanacağımız bağımsız değişkenleri (features) seçiyoruz.</p>
+        <p>y: Tahmin etmeye çalıştığmız bağımlı değişken, yani hedef değişken istihdam_orani olarak tanımlanmıştır</p>
+       
+    </div><!-- Üçüncü Fotoğraf -->
+    <div class="photo-container">
+        <img src="c:\Users\Lenovo\Desktop\staj\7.png" alt="Üçüncü fotoğraf">
+        <p>y_test ve y_pred in boyutlarını yeniden yapılandırıp MSE ve R2 değerlerini hesapladım</p>
+    </div>
+    <div class="photo-container">
+            <img src="c:\Users\Lenovo\Desktop\staj\8.png" alt="Üçüncü fotoğraf">
+            <p>Gerçek değerleri ve tahmin değerlerini kullanarak bir tablo oluşturdum.</p>
+        </div>
+
+    <div class="photo-container">
+                <img src="c:\Users\Lenovo\Desktop\staj\10.png" alt="Üçüncü fotoğraf">
+                <p>KNN sınıflandırması kullandım ve MSE , R2 gibi değerleri buldum. Daha sonra tahmin ve gerçek değerlerin bir regresyon tablosunu ekrana bastırdım</p>
+            </div>
+    <div class="photo-container">
+                    <img src="c:\Users\Lenovo\Desktop\staj\9.png" alt="Üçüncü fotoğraf">
+                    <p>KNN tahmin ve gerçek değerleri kullanarak bir tablo oluşturdum.</p>
+                </div>
+    <div class="photo-container">
+                        <img src="c:\Users\Lenovo\Desktop\staj\11.png" alt="Üçüncü fotoğraf">
+                        
+                        </div>
+    <div class="photo-container">
+                 <img src="c:\Users\Lenovo\Desktop\staj\12.png" alt="Üçüncü fotoğraf">
+            
+            </div>
+
+
+</body>
+</html>
